@@ -62,7 +62,7 @@ async function show() {
 }
 
 function set(e){
-	objv.setdata(e)
+	objv.build(e)
 }
 
 function reset(){
