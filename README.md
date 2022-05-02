@@ -25,3 +25,5 @@ objv = new obj(document.querySelector("canvas"));
 objv.build(data);
 objv.draw();
 ```
+
+see the demo at https://flamebousteur.github.io/demo/objlecter/
