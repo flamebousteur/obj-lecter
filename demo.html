@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="module" src="script.js"></script>
+		<style>
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+canvas{
+	/* width: 100%; */
+	border: 1px solid black
+}
+		</style>
+	</head>
+	<body>
+		<input type="file" accept=".obj">
+		<br>
+		<canvas height="300px" width="300px"></canvas>
+		<br>animate:
+		<input id="animate" type="checkbox">
+		<br>vertex:
+		<input id="showvertex" type="checkbox" checked="">
+		<br>edge:
+		<input id="showedge" type="checkbox" checked="">
+		<br>face:
+		<input id="showface" type="checkbox">
+		<br>verticeswidth:
+		<input id="verticeswidth" type="range" min="1" max="10" value="1">
+		<br>scale:
+		<input id="scale" type="range" value="50">
+		<br>x rotation:
+		<input id="xr" type="range" min="0" max="360" value="0">
+		<br>y rotation:
+		<input id="yr" type="range" min="0" max="360" value="0">
+		<br>z rotation:
+		<input id="zr" type="range" min="0" max="360" value="0">
+		<br>x position:
+		<input id="x" type="range" min="-25" max="25" value="0">
+		<br>y position:
+		<input id="y" type="range" min="-25" max="25" value="0">
+		<br>z position:
+		<input id="z" type="range" min="0" max="25" value="0">
+		<br>
+		<button id="reset" onclick="reset()">reset</button>
+	</body>
+</html>
