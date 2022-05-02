@@ -71,11 +71,6 @@ class obj {
 		this.canvas.getContext("2d").clearRect(0, 0, this.canvas.width, this.canvas.height);
 	}
 
-	setdata(data) {
-//		this.data = data;
-		this.build(data);
-	}
-
 	draw() {
 		for (let i = 0; i < this.object.length; i++) {
 			let faces = this.object[i].faces;
